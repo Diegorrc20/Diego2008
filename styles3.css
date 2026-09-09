@@ -1,0 +1,140 @@
+#seccion-login {
+  background-color: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 25px;
+  max-width: 450px;
+  margin: 30px auto 10px auto;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+#seccion-login h2 {
+  margin-top: 0;
+  margin-bottom: 8px;
+  border-bottom: 2px solid #0088cc;
+  padding-bottom: 6px;
+  font-size: 1.3rem;
+}
+
+#seccion-login p {
+  margin-bottom: 15px;
+  color: #555555;
+  font-size: 0.9rem;
+}
+
+#seccion-login .campo {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 15px;
+}
+
+#seccion-login label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #444444;
+}
+
+/* Se agrega input[type="email"] para que tenga el mismo ancho y estilo */
+#seccion-login input[type="text"],
+#seccion-login input[type="email"],
+#seccion-login input[type="password"] {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px 12px;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+#seccion-login input:focus {
+  outline: none;
+  border-color: #0088cc;
+  box-shadow: 0 0 0 3px rgba(0, 136, 204, 0.15);
+}
+
+#form-login button {
+  width: 100%;
+  margin-top: 10px;
+}
+
+/* Mensajes de error */
+.mensaje-error {
+  color: #d9534f;
+  font-size: 0.85rem;
+  margin-top: 4px;
+  display: none;
+}
+
+/* Ocultamiento por defecto del panel admin */
+#panel-admin {
+  display: none;
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  margin-top: 20px;
+}
+
+/* Estilos de la tabla de administración */
+.tabla-admin {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+
+.tabla-admin th, 
+.tabla-admin td {
+  border: 1px solid #ccc;
+  padding: 10px 12px;
+  text-align: left;
+}
+
+.tabla-admin th {
+  background-color: #333;
+  color: #fff;
+  font-weight: bold;
+}
+
+.tabla-admin tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+/* Botón cerrar sesión */
+#btn-cerrar {
+  background-color: #d9534f;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#btn-cerrar:hover {
+  background-color: #c9302c;
+}
+
+.contacto-info {
+  background-color: #f8f9fa;
+  padding: 15px 20px;
+  border-left: 4px solid white;
+  margin-bottom: 25px;
+  border-radius: 4px;
+}
+
+footer {
+  background-color: #111827; 
+  padding: 20px 0;
+  text-align: center;
+  margin-top: 50px;
+}
+
+footer p,
+footer .footer-text,
+.footer-contacto,
+.footer-contacto h3 {
+  color: #ffffff !important; 
+  text-align: center;
+}
