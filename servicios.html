@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Diego Rodríguez">
+    <meta name="description" content="Plataforma de subastas y exhibición de pinturas al óleo en línea.">
+    <meta name="keywords" content="subasta arte escolar, pintura oleo santiago, pujas obras de arte, diseño visual feria">
+    <title>Servicios - MasterpieceOS</title>
+    <link rel="stylesheet" href="./CSS/styles.css">
+    <link rel="stylesheet" href="./CSS/styles5.css">
+    <script src="./JS/app3.js" defer></script>
+</head>
+<body>
+
+    <header class="header-principal">
+        <div class="logo-titulo">
+            <img src="./Imagenes/47b3852a-9059-4808-a445-7b7e8baf6868.png" alt="Logo MasterpieceOS" class="logo">
+            <h1>MasterpieceOS</h1>
+        </div>
+
+        <nav class="nav-principal">
+            <a href="index.html">Inicio</a>
+            <a href="nosotros.html">Nosotros</a>
+            <a href="servicios.html" class="active">Servicios</a>
+            <a href="contacto.html">Contacto</a>
+            <a href="finanzas.html">Finanzas</a>
+        </nav>
+    </header>
+
+    <section class="hero-banner">
+        <div class="hero-content">
+            <h2>CATÁLOGO DE SERVICIOS Y SUBASTAS</h2>
+        </div>
+    </section>
+
+    <main class="container">
+        <section class="card">
+            
+            <section class="seccion-catalogo">
+                <h2>Obras en Exposición</h2>
+                <div id="contenedor-obras" class="grid-catalogo"></div>
+            </section>
+
+            <section class="seccion-subasta">
+                <div class="artwork-card-subasta">
+
+                    <h2 class="artwork-title">Seleccione una pintura del catálogo para iniciar su oferta</h2>
+                    <hr class="divider">
+
+                    <div class="price-box">
+                        Precio base actual: <strong id="precio-base-texto">$15.000 CLP</strong>
+                    </div>
+
+                    <form id="form-oferta" novalidate>
+                        <div class="form-group">
+                            <label for="nombre-pintura">Nombre de la pintura que desea comprar:</label>
+                            <input type="text" id="nombre-pintura" class="form-control">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="monto-oferta">Monto de tu oferta (CLP):</label>
+                            <input type="number" id="monto-oferta" class="form-control">
+                        </div>
+
+                        <p id="mensaje-error" class="mensaje-error"></p>
+
+                        <button type="submit" class="btn-submit">Enviar Oferta</button>
+                    </form>
+
+                    <h3 class="history-title">Historial de Pujas</h3>
+                    <table class="history-table">
+                        <thead>
+                            <tr>
+                                <th>Pintura Ofertada</th>
+                                <th>Monto Ofertado</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tabla-pujas-body">
+                            <tr>
+                                <td>Precio Inicial de la Feria</td>
+                                <td>$15.000 CLP</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+            </section>
+
+        </section>
+    </main>
+
+    <div id="alertFloat"></div>
+
+    <footer>
+        <div class="container footer-content">
+            <p>&copy; 2026 Liceo Comercial B-72 / UTEM</p>
+        </div>
+    </footer>
+
+</body>
+</html>

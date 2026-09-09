@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Diego Rodríguez">
+    <meta name="description" content="Encuentra más información de nuestros contactos y ubicación de MasterpieceOS">
+    <meta name="keywords" content="Contacto MasterpieceOS, dirección, teléfono, correo">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="CSS/styles.css">
+    <link rel="stylesheet" href="CSS/styles3.css">
+    <script src="JS/app2.js" defer></script>
+</head>
+<body>
+
+    <header class="header-principal">
+        <div class="logo-titulo">
+            <img src="Imagenes/47b3852a-9059-4808-a445-7b7e8baf6868.png" alt="Logo MasterpieceOS" class="logo">
+            <h1>MasterpieceOS</h1>
+        </div>
+
+        <nav class="nav-principal">
+            <a href="index.html">Inicio</a>
+            <a href="nosotros.html">Nosotros</a>
+            <a href="servicios.html">Servicios</a>
+            <a href="contacto.html" class="active">Contacto</a>
+            <a href="finanzas.html">Finanzas</a>
+        </nav>
+    </header>
+
+    <section class="hero-banner">
+        <div class="hero-content">
+            <h2>CONTACTO</h2>
+        </div>
+    </section>
+
+    <main class="container">
+        <section class="card">
+            
+            <div id="seccion-publica">
+                <div class="mensaje-bienvenida">
+                    <h2>Atención y Soporte</h2>
+                    <p>Esta sección está diseñada para brindarte atención directa si tienes dudas sobre el funcionamiento de nuestras subastas, los servicios disponibles o el proceso de compra de obras.</p>
+                    <p>Todas las consultas enviadas por formulario o correo son respondidas en un plazo máximo de <strong>24 horas hábiles</strong>.</p>
+                </div>
+
+                <h2>¿Para qué puedes contactarnos?</h2>
+                <ul>
+                    <li><strong>Asesoría para Artistas:</strong> Si eres un creador local y quieres publicar tus pinturas, esculturas o diseños en nuestra plataforma.</li>
+                    <li><strong>Consultas sobre Reservas:</strong> Si deseas verificar el estado de una cotización o adquirir una pieza del catálogo de servicios.</li>
+                    <li><strong>Soporte Técnico:</strong> Para resolver problemas de acceso o dudas sobre el registro de tus solicitudes.</li>
+                </ul>
+
+                <hr style="margin: 30px 0; border: 0; border-top: 1px solid #eaeaea;">
+
+                <div id="seccion-login">
+                    <h2>Iniciar Sesión</h2>
+                    <p>Ingresa tus credenciales para acceder al panel de administración:</p>
+                    
+                    <form id="form-login" novalidate>
+                        <div class="campo">
+                            <label for="usuario">Usuario:</label>
+                            <input type="text" id="usuario">
+                            <p id="error-usuario" class="mensaje-error"></p>
+                        </div>
+
+                        <div class="campo">
+                            <label for="correo">Correo Electrónico:</label>
+                            <input type="email" id="correo">
+                            <p id="error-correo" class="mensaje-error"></p>
+                        </div>
+
+                        <div class="campo">
+                            <label for="clave">Contraseña:</label>
+                            <input type="password" id="clave">
+                            <p id="error-clave" class="mensaje-error"></p>
+                        </div>
+
+                        <button type="submit" class="btn">Ingresar al Panel</button>
+                    </form>
+                </div>
+            </div>
+
+            <div id="panel-admin" style="display: none;">
+                <h2>Panel de Administración - Reservas Registradas</h2>
+                <p>A continuación se detallan los pedidos y reservas guardados en el sistema:</p>
+                
+                <table id="tabla-pedidos" class="tabla-admin">
+                    <thead>
+                        <tr>
+                            <th>Usuario</th>
+                            <th>Correo</th>
+                            <th>Servicio / Obra</th>
+                            <th>Detalle de la Reserva</th>
+                        </tr>
+                    </thead>
+                    <tbody id="cuerpo-tabla">
+                    </tbody>
+                </table>
+
+                <button id="btn-cerrar" class="btn" style="margin-top: 20px;">Cerrar Sesión</button>
+            </div>
+
+        </section>
+    </main>
+
+    <div id="alertFloat"></div>
+    
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-contacto">
+                <h3>Contacto Directo</h3>
+                <p><strong>Teléfono:</strong> +56 9 53518383</p>
+                <p><strong>Correo:</strong> contacto@masterpieceos.cl</p>
+                <p><strong>Dirección:</strong> Av. Ecuador 3659, Estación Central, Región Metropolitana</p>
+            </div>
+            <hr style="margin: 15px 0; border: 0; border-top: 1px solid #eaeaea;">
+            <p>&copy; 2026 Liceo Comercial B-72 / UTEM</p>
+        </div>
+    </footer>
+
+</body>
+</html>

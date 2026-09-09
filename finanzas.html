@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Diego Rodríguez">
+    <meta name="description" content="Calculadora de presupuesto de Google Ads y finanzas de MasterpieceOS">
+    <title>Finanzas - MasterpieceOS</title>
+    <link rel="stylesheet" href="CSS/styles.css">
+    <link rel="stylesheet" href="CSS/styles4.css">
+    <script src="JS/app4.js" defer></script>
+</head>
+<body>
+
+    <header class="header-principal">
+        <div class="logo-titulo">
+            <img src="Imagenes/47b3852a-9059-4808-a445-7b7e8baf6868.png" alt="Logo MasterpieceOS" class="logo">
+            <h1>MasterpieceOS</h1>
+        </div>
+
+        <nav class="nav-principal">
+            <a href="index.html">Inicio</a>
+            <a href="nosotros.html">Nosotros</a>
+            <a href="servicios.html">Servicios</a>
+            <a href="contacto.html">Contacto</a>
+            <a href="finanzas.html" class="active">Finanzas</a>
+        </nav>
+    </header>
+
+    <section class="hero-banner">
+        <div class="hero-content">
+            <h2>CALCULADORA</h2>
+        </div>
+    </section>
+
+    <main class="container">
+        <section class="card">
+            <h2>Calculadora de Presupuesto - Google Ads</h2>
+            <p>Calcula el costo estimado de inversión en marketing digital para promocionar tus obras o servicios.</p>
+
+            <form id="form-finanzas" novalidate>
+                <div class="form-group">
+                    <label for="cpc">Costo por Clic (CPC en CLP):</label>
+                    <input type="text" id="cpc">
+                    <p id="error-cpc" class="mensaje-error"></p>
+                </div>
+
+                <div class="form-group">
+                    <label for="clics">Clics Mensuales Esperados:</label>
+                    <input type="text" id="clics">
+                    <p id="error-clics" class="mensaje-error"></p>
+                </div>
+
+                <div class="form-group">
+                    <label for="telefono-contacto">Teléfono de Contacto:</label>
+                    <input type="text" id="telefono-contacto">
+                    <p id="error-telefono" class="mensaje-error"></p>
+                </div>
+
+                <button type="submit" class="btn">Calcular Presupuesto</button>
+            </form>
+
+            <div id="resultado-calculo" class="resultado-box"></div>
+            <div id="advertencia-presupuesto" class="alerta-amarilla"></div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-contacto">
+                <p>&copy; 2026 Liceo Comercial B-72 / UTEM</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
